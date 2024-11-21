@@ -1,3 +1,4 @@
+"use client"
 import styles from './Banner.module.css';
 
 interface BannerProps {
