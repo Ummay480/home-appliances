@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/AboutUs.module.css"; // Assuming you have a CSS module for styling
+import styles from "../../styles/AboutUs.module.css"; // Assuming you have a CSS module for styling
 
 const AboutUs: React.FC = () => {
   return (
