@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./ProductGrid.module.css";
+import styles from "../../styles/ProductGrid.module.css";
 import ProductCard from "./ProductCard";
 
 type ProductGridProps = {

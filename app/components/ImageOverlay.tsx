@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import "./ImageOverlay.css";
+import "../../styles/ImageOverlay.css";
 
 interface ImageOverlayProps {
   imageSrc: string;

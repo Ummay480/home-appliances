@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
-import './Header.css';
+import '../../styles/Header.css';
 
 const Header: React.FC = () => {
   return (

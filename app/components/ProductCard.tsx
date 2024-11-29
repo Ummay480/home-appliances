@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./ProductCard.module.css";
+import styles from "../../styles/ProductCard.module.css";
 import Image from "next/image";
 
 type ProductCardProps = {

@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import ProductGrid from './components/ProductGrid';
 import HotDeals from './components/HotDeals';
 import Banner from './components/Banner';
-import styles from '../components/Home.module.css';
+import styles from '../styles/Home.module.css';
 import FeaturesSection from './components/FeaturesSection';
 import ImageOverlay from './components/ImageOverlay';
 

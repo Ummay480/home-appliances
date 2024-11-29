@@ -1,5 +1,6 @@
 "use client"
-import styles from './Banner.module.css';
+import styles from '../../styles/Banner.module.css';
+
 
 interface BannerProps {
   imageSrc: string;

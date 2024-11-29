@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import styles from './FeatureCard.module.css';
+import styles from "../../styles/Features.module.css";
 
 interface FeatureCardProps {
   icon: string;

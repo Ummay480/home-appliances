@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import './HotDeals.css';
+import '../../styles/HotDeals.css';
 
 
 type Product = {

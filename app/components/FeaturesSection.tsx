@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import styles from './Features.module.css';
+import styles from '../../styles/Features.module.css';
 
 const FeaturesSection: React.FC = () => {
   return (

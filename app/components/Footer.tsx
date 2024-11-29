@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
-import styles from './Footer.module.css';
+import styles from"../../styles/Footer.module.css";
 
 const Footer: React.FC = () => {
   return (
