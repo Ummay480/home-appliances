@@ -1,0 +1,36 @@
+.productDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .productImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .productInfo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .productInfo .description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .productInfo .price {
+    font-size: 1.5rem;
+    color: #e63946;
+    font-weight: bold;
+  }
+  

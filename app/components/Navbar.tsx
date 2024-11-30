@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Correct import for App Router
 import { FaCartPlus, FaSearch } from 'react-icons/fa'; // Importing cart and search icons
 import Link from 'next/link'; // Import Link for navigation
+import { useCart } from '../../context/CartContext'; // Import Cart Context for cart functionality
 import '../../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
+  const { cart } = useCart(); // Access cart state from CartContext
   const router = useRouter();
   
   // State to toggle the search input visibility
@@ -86,9 +88,12 @@ const Navbar: React.FC = () => {
 
         {/* Cart Block */}
         <div className="border-block">
-          <button className="cart-button">
-            <FaCartPlus className="icon" />
-          </button>
+          <Link href="/cart" passHref>
+            <button className="cart-button">
+              <FaCartPlus className="icon" />
+              <span className="cart-count">{cart.length}</span> {/* Cart count */}
+            </button>
+          </Link>
         </div>
 
         {/* Search Block */}
