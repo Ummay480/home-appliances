@@ -5,7 +5,8 @@
   background-color: #438DB8;
   color: white;
   font-family: Arial, sans-serif;
-  padding: 0px 80px 0px 80px;
+  padding: 0px 80px;
+  flex-wrap: wrap;
 }
 
 .header-left {
@@ -41,25 +42,89 @@
   font-weight: 300;
 }
 
-.header-right .contact-info {
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .contact-icon {
-  
-  padding: 2px; /* Padding to give some spacing inside the icon */
+  padding: 2px;
   font-size: 18px;
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
 }
 
 .phone-icon {
-  transform: scaleX(-1); /* Flip the phone icon horizontally */
+  transform: scaleX(-1);
 }
 
 .contact-text {
   margin-left: 5px;
   font-weight: 300;
   color: white;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .header-left,
+  .header-right {
+    display: none; /* Hide left and right sections on mobile */
+  }
+
+  .header-center {
+    display: block; /* Show only the center section on mobile */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center the social icons on smaller screens */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Stack contact info vertically */
+    align-items: center; /* Center the contact info icons and text */
+  }
+
+  .contact-icon {
+    font-size: 16px; /* Adjust icon size for smaller screens */
+  }
+
+  .icon-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 18px; /* Larger icons for better visibility */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 10px; /* Further reduce padding on very small screens */
+  }
+
+  .header-left p,
+  .header-center p {
+    font-size: 14px; /* Reduce font size on smaller screens */
+  }
+
+  .contact-text {
+    font-size: 14px; /* Reduce text size for contact info */
+  }
+
+  .icon-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 20px; /* Slightly larger icons for very small screens */
+  }
+
+  .contact-info {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
 }

@@ -34,11 +34,11 @@ const Footer: React.FC = () => {
         <div className={styles.section}>
           <h3>Mansoury.</h3>
           <ul>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/careers">Careers</Link></li>
-            <li><Link href="/collaboration">Collaboration</Link></li>
-            <li><Link href="/dashboard">Dashboard</Link></li>
-            <li><Link href="/policies">Policies</Link></li>
+            <li><Link href="/aboutUs"passHref>About Us</Link></li>
+            <li><Link href="/career"passHref>Careers</Link></li>
+            <li><Link href="/collabration"passHref>Collaboration</Link></li>
+            <li><Link href="/dashboard"passHref>Dashboard</Link></li>
+            <li><Link href="/policies"passHref>Policies</Link></li>
           </ul>
         </div>
         
@@ -46,11 +46,11 @@ const Footer: React.FC = () => {
         <div className={styles.section}>
           <h3>Customer Services</h3>
           <ul>
-            <li><Link href="/help-center">Rules and Regulations</Link></li>
-            <li><Link href="/track-order">Terms of Use</Link></li>
-            <li><Link href="/returns">Return Procedure</Link></li>
-            <li><Link href="/shipping">Privacy Policy</Link></li>
-            <li><Link href="/faq">Forums</Link></li>
+            <li><Link href="/help-center"passHref>Rules and Regulations</Link></li>
+            <li><Link href="/track-order"passHref>Terms of Use</Link></li>
+            <li><Link href="/returns"passHref>Return Procedure</Link></li>
+            <li><Link href="/policies"passHref>Privacy Policy</Link></li>
+            <li><Link href="/faq"passHref>Forums</Link></li>
           </ul>
         </div>
        
@@ -58,11 +58,11 @@ const Footer: React.FC = () => {
         <div className={styles.section}>
           <h3>Quick Access</h3>
           <ul>
-            <li><Link href="/contact-us">Contact Us</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/returns">Return Procedure</Link></li>
-            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/contact"passHref>Contact Us</Link></li>
+            <li><Link href="/blog"passHref>Blog</Link></li>
+            <li><Link href="/returns"passHref>Return Procedure</Link></li>
+            <li><Link href="/policies"passHref>Privacy Policy</Link></li>
+            <li><Link href="/faq"passHref>FAQ</Link></li>
           </ul>
         </div>
       </div>
