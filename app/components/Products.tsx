@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // Import the Image component
 import styles from "../../styles/Products.module.css";
 
 const Products: React.FC = () => {
@@ -28,12 +29,13 @@ const Products: React.FC = () => {
         <div className={styles.grid}>
           {products.map((product, index) => (
             <div className={styles.productCard} key={index}>
-              <img
+              {/* Replace img tag with Image component */}
+              <Image
                 src={product.image}
                 alt={product.name}
                 className={styles.productImage}
-                width="150" // Replace with desired width
-                height="150" // Replace with desired height
+                width={150} // Set width as per your design
+                height={150} // Set height as per your design
               />
               <h3 className={styles.productName}>{product.name}</h3>
               <p className={styles.productPrice}>{product.price}</p>
