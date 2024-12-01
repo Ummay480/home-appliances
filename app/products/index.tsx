@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Products from "../components/Products"; // Ensure the relative path is correct
 
