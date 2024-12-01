@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Image from "next/image"; // If using Next.js for optimized images
+import Image from 'next/image'; // If using Next.js for optimized images
 import styles from "../../styles/Banner.module.css"; // Ensure this path is correct
 
 type BannerProps = {
