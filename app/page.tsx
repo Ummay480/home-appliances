@@ -16,12 +16,13 @@ const Home: React.FC = () => {
           <HotDeals />
         </div>
         <div className={styles.grid}>
-  <Banner imageSrc="/images/oven.png" />
-  <Banner imageSrc="/images/kitchenware.png" />
-  <Banner imageSrc="/images/luggage.png" />
-  <Banner imageSrc="/images/fridge.png" />
-  <Banner imageSrc="/images/washing-machine.png" />
+  <Banner imageSrc="/images/oven.png" width={200} height={200} />
+  <Banner imageSrc="/images/kitchenware.png" width={200} height={200} />
+  <Banner imageSrc="/images/luggage.png" width={200} height={200} />
+  <Banner imageSrc="/images/fridge.png" width={200} height={200} />
+  <Banner imageSrc="/images/washing-machine.png" width={200} height={200} />
 </div>
+
 
 
     <ProductGrid title="Products you may Like" />

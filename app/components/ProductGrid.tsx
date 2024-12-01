@@ -9,7 +9,6 @@ type ProductGridProps = {
 };
 
 const ProductGrid: React.FC<ProductGridProps> = ({ title }) => {
-  // Sample product data with price as a number for better flexibility
   const products = [
     { image: "/images/washing-product.png", name: "Bosh 300 Series SHEM63W55N", price: 998 },
     { image: "/images/dishwasher.png", name: "Bosh 300 Series SHEM63W55N", price: 998 },
@@ -25,16 +24,16 @@ const ProductGrid: React.FC<ProductGridProps> = ({ title }) => {
 
   return (
     <section className={styles.gridSection}>
-      <h2 className={styles.title}>{title}</h2> {/* Rendering the title prop */}
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.grid}>
         {products.map((product, index) => (
           <ProductCard
             key={index}
-            id={String(index)} // If you have a unique ID for each product, use it
+            id={String(index)}
             image={product.image}
             name={product.name}
-            price={product.price.toString()} // Ensure price is passed as a string
-            showAddToCart={true} // Assuming you want to show the button
+            price={product.price.toString()}
+            showAddToCart={true}
           />
         ))}
       </div>

@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React from "react";
 import styles from "../../styles/ProductCard.module.css";
 import Image from "next/image";
@@ -13,7 +13,7 @@ type ProductCardProps = {
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({ id, name, price, image, showAddToCart }) => {
-  const item = { id, name, price: Number(price) };
+  const item = { id, name, price: Number(price) };  // Ensure price is a number here
 
   return (
     <div className={styles.card}>

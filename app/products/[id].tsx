@@ -11,6 +11,7 @@ type Product = {
   name: string;
   price: number;
   image: string;
+  showAddToCart?: boolean;
   description: string;
 };
 
@@ -47,6 +48,7 @@ const ProductDetailPage: React.FC = () => {
         name={product.name}
         price={product.price.toFixed(2)}
         image={product.image}
+        showAddToCart={true}
       />
       <div className={styles.productInfo}>
         <h1>{product.name}</h1>

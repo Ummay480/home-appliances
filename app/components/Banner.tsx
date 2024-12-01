@@ -1,15 +1,24 @@
 "use client"
-import styles from '../../styles/Banner.module.css';
+import React from "react";
+import Image from "next/image"; // If using Next.js for optimized images
+import styles from "../../styles/Banner.module.css"; // Ensure this path is correct
 
-
-interface BannerProps {
+type BannerProps = {
   imageSrc: string;
-}
+  width: number;
+  height: number;
+};
 
-const Banner: React.FC<BannerProps> = ({ imageSrc }) => {
+const Banner: React.FC<BannerProps> = ({ imageSrc, width, height }) => {
   return (
     <div className={styles.banner}>
-      <img src={imageSrc} alt="Banner" className={styles.image} />
+      <Image
+        src={imageSrc}
+        alt="Banner"
+        width={width} // Apply the width prop
+        height={height} // Apply the height prop
+        className={styles.bannerImage}
+      />
     </div>
   );
 };
