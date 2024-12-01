@@ -1,8 +1,7 @@
 'use client';
-
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'; // For navigation in Next.js
-import '../../styles/Contact.css'; // Ensure your CSS file is linked for styles
+import './styles/contact.css'; // Ensure your CSS file is linked for styles
 
 const Contact = () => {
   const [formData, setFormData] = useState({
