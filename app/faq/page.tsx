@@ -1,3 +1,4 @@
+"use cllient"
 const FAQ = () => {
     return (
       <div>

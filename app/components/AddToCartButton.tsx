@@ -1,16 +1,21 @@
 "use client";
 import React from "react";
-import { useCart } from "../../context/CartContext"; // Import the CartContext
+import { useCart } from "../../context/CartContext";
 
 type AddToCartButtonProps = {
-  item: { id: string; name: string; price: number }; // Define the item type
+  item: { id: string; name: string; price: number };
 };
 
 const AddToCartButton: React.FC<AddToCartButtonProps> = ({ item }) => {
-  const { addToCart } = useCart(); // Get the addToCart function from CartContext
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    addToCart(item); // Call the addToCart function when button is clicked
+    addToCart({
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      quantity: 1, // Default quantity
+    });
   };
 
   return (

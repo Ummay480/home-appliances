@@ -3,7 +3,7 @@ import React from "react";
 import { useCart } from "../../context/CartContext";
 
 const Cart: React.FC = () => {
-  const { cart, removeFromCart } = useCart();
+  const { cart, } = useCart();
 
   return (
     <div>
@@ -15,7 +15,7 @@ const Cart: React.FC = () => {
           {cart.map((item) => (
             <li key={item.id}>
               {item.name} - ${item.price} x {item.quantity}
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              <button onClick={() => (item.id)}>Remove</button>
             </li>
           ))}
         </ul>
