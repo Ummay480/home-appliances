@@ -1,11 +1,12 @@
+/* Desktop Styling */
 .navbar {
   display: flex;
+  flex-direction: row;  /* Ensure items are in a row */
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;  /* Adjusted padding for spacing */
   background-color: white;
   color: #438DB8;
-  flex-wrap: nowrap;
 }
 
 .navbar-brand {
@@ -53,12 +54,14 @@
   border: none;
   color: #438DB8;
   cursor: pointer;
+
 }
 
 .register-button .user-icon,
 .cart-button .icon,
 .search-button .icon {
   font-size: 20px;
+  
 }
 
 .register-button {
@@ -66,6 +69,7 @@
   align-items: center;
   gap: 5px;
   font-size: 18px;
+  
 }
 
 .cart-button .icon {
@@ -79,8 +83,13 @@
 /* Mobile Styling */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;  /* Stack items in a column on mobile */
+    align-items: center; 
+    margin-left: -12rem; /* Center everything horizontally */
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;  /* Space between brand and actions */
   }
 
   .navbar-links {
@@ -88,19 +97,14 @@
   }
 
   .navbar-actions {
-    flex-direction: row; /* Keep actions in the same row */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;  /* Add spacing between action blocks */
+    display: flex;
+    flex-direction: row;  /* Keep actions in a row on mobile */
+    justify-content: center;  /* Center the actions horizontally */
+    gap: 20px;  /* Add spacing between action blocks */
+    width: 100%;  /* Ensure it spans full width */
   }
 
   .border-block {
     width: auto;
-  }
-
-  .navbar-brand {
-    text-align: center;
-    margin-bottom: 10px;  /* Space between logo and action blocks */
   }
 }
