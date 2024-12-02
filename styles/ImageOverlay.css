@@ -1,64 +1,67 @@
+/* Default (for both mobile and desktop, ensure background image is visible) */
 .image-overlay {
-  width: 100%; /* Adjust width if needed */
-  height: 345px;
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Set height to 60% of the viewport height */
   background-size: cover;
   background-position: center;
-  position: relative;
-}
-
-/* Glass overlay effect */
-.glass-overlay {
-  position: absolute;
-  width: 300px;
-  inset: 0;
-  background: rgba(107, 183, 202, 0.3); /* Semi-transparent white */
-  backdrop-filter: blur(6px); 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px; /* Space between overlay content and the right edge */
-  margin-left:708px ;
+}
+
+/* Glass Effect - this should appear only on mobile */
+.glass-overlay {
+  position: absolute;
+  top: 0;
+  left: -14rem;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2); /* Slight white transparency */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
 }
 
 /* Text container styling */
 .text-container {
-  width: 200px;
-  color: white;
-  text-align: left;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
 }
 
-/* Title styling */
 .title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-left: 15px;
-  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
-/* Subtitle styling */
 .subtitle {
-  font-size: 20px;
-  line-height: 2rem;
-  font-weight: 500;
-  color: #FFFFFF;
-  margin-left: 20px;
-  margin-top: -8px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* Button styling */
 .show-products-button {
   padding: 10px 20px;
-  color: #FFFFFF; /* Dark blue */
-  font-weight: 500;
-  background:none;
-  border: non;
-  border-color: #f6f6f6;
-  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 30px;
 }
 
-.show-products-button:hover {
-  color: #f3f3f3;
+/* Show glass effect only on mobile (up to 768px) */
+@media (max-width: 768px) {
+  .glass-overlay {
+    display: flex; /* Enable glass effect on mobile */
+  }
+}
+
+/* Hide the glass effect on larger screens (desktop and tablets) */
+@media (min-width: 769px) {
+  .glass-overlay {
+    display: none; /* Disable glass effect on larger screens */
+  }
 }

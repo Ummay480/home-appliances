@@ -4,7 +4,7 @@ import Products from "../components/Products"; // Ensure the relative path is co
 
 const ProductsPage = () => {
   return (
-    <div>
+    <div >
       <h1>Products Page</h1>
       <Products /> {/* Rendering the Products component */}
     </div>

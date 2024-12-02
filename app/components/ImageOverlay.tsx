@@ -14,7 +14,7 @@ const ImageOverlay: React.FC<ImageOverlayProps> = ({ imageSrc, title, descriptio
       className="image-overlay"
       style={{ backgroundImage: `url(${imageSrc})` }}
     >
-      {/* Glass Effect Overlay */}
+      Glass Effect Overlay
       <div className="glass-overlay">
         <div className="text-container">
           <h1 className="title">{title}</h1>
