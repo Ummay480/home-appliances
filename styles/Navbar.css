@@ -13,6 +13,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: left;
+  color: #438DB8;
 }
 
 .navbar-links {
@@ -89,6 +90,7 @@
   }
 
   .navbar-brand {
+    color: #438DB8;
     margin-bottom: 10px;  /* Space between brand and actions */
   }
 
