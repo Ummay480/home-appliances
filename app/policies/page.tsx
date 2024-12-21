@@ -11,9 +11,9 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>1. Privacy Policy</h2>
         <p>
-          We take your privacy seriously. This policy explains how we collect, use, and protect your personal
+          We take your privacy seriously. This policy explains how we collect&#34 use&#34 and protect your personal
           information when you visit our website or interact with our services. Your data will never be shared with
-          third parties without your consent, except where required by law.
+          third parties without your consent&#34 except where required by law.
         </p>
         <ul>
           <li>Personal information is only collected for the purpose of providing services.</li>
@@ -25,8 +25,8 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>2. Terms of Service</h2>
         <p>
-          By using our website and services, you agree to the terms outlined in this agreement. These terms govern
-          the use of our site, including purchasing products or services, creating accounts, and interacting with other
+          By using our website and services&#34 you agree to the terms outlined in this agreement. These terms govern
+          the use of our site&#34 including purchasing products or services&#34 creating accounts&#34 and interacting with other
           users.
         </p>
         <ul>
@@ -39,7 +39,7 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>3. Return and Refund Policy</h2>
         <p>
-          We strive to ensure that you are satisfied with our products or services. If you are not completely satisfied,
+          We strive to ensure that you are satisfied with our products or services. If you are not completely satisfied&#34
           we offer a return and refund policy within a specified period.
         </p>
         <ul>
@@ -78,12 +78,12 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>6. Cookie Policy</h2>
         <p>
-          Our website uses cookies to enhance user experience. By continuing to use our site, you consent to the use of
+          Our website uses cookies to enhance user experience. By continuing to use our site&#34 you consent to the use of
           cookies in accordance with this policy.
         </p>
         <ul>
           <li>Cookies are used to store preferences and improve site functionality.</li>
-          <li>You can disable cookies in your browser settings, but some features may not function correctly.</li>
+          <li>You can disable cookies in your browser settings&#34 but some features may not function correctly.</li>
         </ul>
       </section>
 
@@ -91,10 +91,10 @@ const OurPolicies: React.FC = () => {
         <h2 className={styles.policyTitle}>7. Acceptable Use Policy</h2>
         <p>
           Our services should be used responsibly and respectfully. We do not tolerate any activity that could harm our
-          users, the website, or violate laws and regulations.
+          users&#34 the website&#34 or violate laws and regulations.
         </p>
         <ul>
-          <li>No spamming, hacking, or abuse of the system.</li>
+          <li>No spamming&#34 hacking&#34 or abuse of the system.</li>
           <li>No illegal activities or uploading of harmful content.</li>
           <li>We reserve the right to suspend or terminate accounts involved in violations.</li>
         </ul>
@@ -103,8 +103,8 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>8. Pricing and Payment Policy</h2>
         <p>
-          Our pricing is transparent and clearly displayed on our website. We offer multiple payment methods, including
-          credit cards, PayPal, and other secure payment gateways.
+          Our pricing is transparent and clearly displayed on our website. We offer multiple payment methods&#34 including
+          credit cards&#34 PayPal&#34 and other secure payment gateways.
         </p>
         <ul>
           <li>All prices are displayed in [currency].</li>
@@ -116,8 +116,8 @@ const OurPolicies: React.FC = () => {
       <section className={styles.policySection}>
         <h2 className={styles.policyTitle}>9. Disclaimer</h2>
         <p>
-          While we make every effort to ensure that the information on our website is accurate, we cannot guarantee that
-          it is always up to date or error-free. All services are provided "as is," and we are not liable for any damages
+          While we make every effort to ensure that the information on our website is accurate&#34 we cannot guarantee that
+          it is always up to date or error-free. All services are provided we are not liable for any damages
           resulting from the use of our site.
         </p>
       </section>
