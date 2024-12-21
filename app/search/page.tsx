@@ -1,18 +1,22 @@
-'use client'; // To handle routing on the client side
+import { GetServerSideProps, NextPage } from 'next';
 
-import React from 'react';
-import { useRouter } from 'next/router'; // For accessing URL parameters
+interface SearchProps {
+  query: string;
+}
 
-const Search = () => {
-  const router = useRouter();
-  const { query } = router.query; // Getting the query parameter from the URL
+export const getServerSideProps: GetServerSideProps<SearchProps> = async (context) => {
+  const query = (context.query.query as string) || '';
+  return {
+    props: {
+      query,
+    },
+  };
+};
 
-  // Here you can filter or fetch search results based on the query
-  // For demonstration purposes, we'll just display the query
+const Search: NextPage<SearchProps> = ({ query }) => {
   return (
     <div className="search-results">
       <h1>Search Results for: {query}</h1>
-      {/* Logic to display search results can go here */}
     </div>
   );
 };
