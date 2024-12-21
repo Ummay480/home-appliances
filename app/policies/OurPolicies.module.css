@@ -48,7 +48,7 @@
       font-size: 1.6rem;
     }
   
-    .policySection p, .policySection ul li {
+    .policySection p .policySection ul li {
       font-size: 0.9rem;
     }
   }
