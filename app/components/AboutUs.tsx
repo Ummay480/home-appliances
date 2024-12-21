@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
       <section className={styles.missionSection}>
         <h2 className={styles.sectionTitle}>Our Mission</h2>
         <p className={styles.sectionContent}>
-          At [Your Company Name], our mission is to provide high-quality products and exceptional customer service. We strive to create value for our customers by offering innovative solutions in the [industry type].
+          At Mansoury, our mission is to provide high-quality products and exceptional customer service. We strive to create value for our customers by offering innovative solutions in the [industry type].
         </p>
       </section>
 

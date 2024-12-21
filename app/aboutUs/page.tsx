@@ -4,7 +4,7 @@ import AboutUs from "../components/AboutUs";
 
 const AboutUsPage: React.FC = () => {
   return (
-    <div>
+    <div className="px-10">
       <AboutUs />
     </div>
   );
